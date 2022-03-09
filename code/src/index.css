@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +15,133 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration-line: underline;
+  text-underline-position: under;
+}
+
+.main {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-family: Helvetica, sans-serif;
+  color: #fff;
+  border-bottom: 1px solid #a0a0a0;
+  padding: 10px;
+}
+
+.cards-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card {
+  width: 300px;
+  /* outline: 1px solid blue; */
+  margin: 20px;
+  /* width: fit-content; */
+  display: flex;
+  flex-direction: column;
+}
+
+.image-box {
+  /* outline: 1px solid green; */
+  width: fit-content;
+  position: relative;
+  display: block;
+}
+
+.image {
+  /* outline: 1px solid pink; */
+  line-height: 0;
+  width: 100%;
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.buttons-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.image-box:hover > .image-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.image-box:hover > .buttons-overlay {
+  display: flex;
+}
+
+.button {
+  cursor: pointer;
+  opacity: .7;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.button.other {
+  width: 30px;
+}
+
+.button.other:hover {
+  transform: scale(1.1);
+}
+
+.button.play {
+  width: 80px;
+}
+
+.button.play:hover {
+  transform: scale(1.2);
+}
+
+.card-title {
+  /* outline: 1px solid red; */
+  font-size: 14px;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  padding-top: 10px;
+}
+
+.card-artists {
+  /* outline: 1px solid purple; */
+  font-size: 14px;
+  color: #a0a0a0;
+  font-family: Helvetica, sans-serif;
 }
