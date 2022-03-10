@@ -1,10 +1,14 @@
-import React from 'react'
+import React from "react"
 
 const Title = (props) => {
   return (
-    <p className="card-title">
-      <a href={props.albumURL}>{props.title}</a>
-    </p>
+      <a 
+        href={props.albumURL} 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        {props.title}
+      </a>
   )
 }
 
