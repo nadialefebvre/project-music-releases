@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <header className="footer">
       <p>
-        Music releases app created by{" "}
+        By{" "}
         <a
           className="footer-link"
           href="https://github.com/jessand77"
