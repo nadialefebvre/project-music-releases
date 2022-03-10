@@ -1,9 +1,10 @@
 import React from "react"
+
 import data from "./data.json"
 
-import Header from "components/Header"
-import CardsBox from "components/CardsBox"
-import Footer from "components/Footer"
+import Header from "./components/Header"
+import CardsBox from "./components/CardsBox"
+import Footer from "./components/Footer"
 
 const App = () => {
   const albumsType = data.albums.items.filter(album => album.album_type === "album")
