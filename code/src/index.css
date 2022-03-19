@@ -117,16 +117,15 @@ a {
   text-align: center;
 }
 
-/* ----- Media queries for tablet ----- */
+/* ----- Media queries for tablet with 2 columns ----- */
 @media screen and (min-width: 768px) {
-
   .cards-box {
     grid-template-columns: repeat(2, 1fr);
     width: 620px;
-    }
   }
+}
 
-/* ----- Media queries for desktop ----- */
+/* ----- Media queries for desktop with 4 columns with smaller images and hover effects added ----- */
 @media screen and (min-width: 1024px) {
   a,
   .button {
@@ -136,8 +135,8 @@ a {
   .cards-box {
     grid-template-columns: repeat(4, 1fr);
     width: 960px;
-    }
-  
+  }
+
   .card {
     width: 225px;
   }
@@ -196,15 +195,13 @@ a {
   }
 }
 
-/* ----- Media queries for larger desktop ----- */
+/* ----- Media queries for larger desktop where the images can be as big as tablet/mobile view ----- */
 @media screen and (min-width: 1300px) {
-
   .cards-box {
     width: 1260px;
-    }
-  
+  }
+
   .card {
     width: 300px;
   }
-
 }
