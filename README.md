@@ -1,4 +1,7 @@
-# Week 9: Music Releases
+# Project Music Releases
+
+Weekly project for Technigo's bootcamp, week 9: build a webpage with music releases
+
 This week's project was to practice with React and components while using data from Spotify. We had to build a page displaying new music releases. Project done by Jessica Sandler, Laura Sjölander and Nadia Lefebvre.
 
 ## The problem
