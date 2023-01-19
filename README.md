@@ -11,3 +11,7 @@ The project had to be done with a pair-programming approach. In order to fully l
 ## View it live
 
 Project deployed here: [Music releases | Jessica, Laura & Nadia](https://music-releases-spotify.netlify.app/)
+
+<div align="center">
+  <img src="screenshot.jpg" />
+</div>
